@@ -16,7 +16,7 @@ from django.conf import settings
 from rest_framework.authentication import get_authorization_header
 
 REST_SETTINGS = getattr(settings, "REST_FRAMEWORK", {})
-VAULT_SETTINGS = REST_SETTINGS.get("VAULT", {})
+VAULT_SETTINGS = REST_SETTINGS.get("REST_VAULT", {})
 VAULT_KEY = VAULT_SETTINGS.get("SECRET_KEY", b"*Thirty-two byte (256 bits) key*")
 VAULT_HTTP_CONTENT_TYPE = VAULT_SETTINGS.get("HTTP_CONTENT_TYPE", "application/vault")
 VAULT_HTTP_ACCEPT = VAULT_SETTINGS.get("HTTP_ACCEPT", "application/vault")

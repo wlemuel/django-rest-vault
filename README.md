@@ -40,10 +40,10 @@ REST_FRAMEWORK = {
 }
 ```
 
-Also add settings for `VAULT` to your project `settings.py`
+Also add settings for `REST_VAULT` to your project `settings.py`
 
 ```
-VAULT = {
+REST_VAULT = {
   'SECRET_KEY': b'*Thirty-two byte (256 bits) key*',
   'HTTP_CONTENT_TYPE': 'application/vault',
   'HTTP_ACCEPT': 'application/vault',
