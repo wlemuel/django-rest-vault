@@ -69,5 +69,5 @@ curl -u admin:123456 'http://localhost:8000/users/'
 curl -u admin:123456 'http://localhost:8000/users/?format=vault
 ```
 ```
-N8:0aSs"AQȪ<zC0jB=UIT\;IUH#&\1IqZI0x7zkt>舋Kd ng:       j+WЂM#gd̼&GȌ/NjQb_
+6ARyPVxylOavaXFslb/Ab/AiYWsoFqCIu8pJ9bhnGI9zozmRkdWOySt4bI7CY0detuA9RkWhnHMS4/gLIu907E0Z8A0vHP56z493Zkld+UYSS94nk19LDr5TfkOEAQ0+A4C1AgbxlgSWk2XpxpDVZc4Nwm9rXOrP1xpIWXwAUREG520mdPwiR8AYPUpRVExsH7hSKXiasEVczAxPsXVKaamv/WC3CxgMldrIRA==
 ```
