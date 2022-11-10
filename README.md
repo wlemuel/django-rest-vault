@@ -51,3 +51,23 @@ REST_VAULT = {
   'USE_TOKEN_AS_KEY': True,
 }
 ```
+
+## Examples
+
+### Get Users List (Default - json)
+
+```sh
+curl -u admin:123456 'http://localhost:8000/users/'
+```
+```
+{"count":1,"next":null,"previous":null,"results":[{"url":"http://localhost:8000/users/1/?format=json","username":"admin","email":"admin@example.com","groups":[]}]}
+```
+
+### Get Users List (vault)
+
+```sh
+curl -u admin:123456 'http://localhost:8000/users/?format=vault
+```
+```
+N8:0aSs"AQȪ<zC0jB=UIT\;IUH#&\1IqZI0x7zkt>舋Kd ng:       j+WЂM#gd̼&GȌ/NjQb_
+```
