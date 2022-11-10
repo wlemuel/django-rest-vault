@@ -4,31 +4,39 @@ from __future__ import print_function
 
 import io
 import os
+import re
 
 from setuptools import setup
 
-from rest_framework_vault import __version__ as VERSION
+
+_pkg = "rest_framework_vault"
 
 
-def read_req(req_file):
-    with open(os.path.join("requirements", req_file)) as req:
-        return [
-            line.strip()
-            for line in req.readlines()
-            if line.strip() and not line.strip().startswith("#")
-        ]
+def get_version(package):
+    """
+    Return package version as listed in `__version__` in `init.py`.
+    """
+    init_py = open(os.path.join(package, "__init__.py")).read()
+    return re.search("^__version__ = ['\"]([^'\"]+)['\"]", init_py, re.MULTILINE).group(
+        1
+    )
 
 
 with io.open("README.md", encoding="utf-8") as readme:
     description = readme.read()
 
-requirements = read_req("base.txt")
+requirements = [
+    "Django>=2.2.16",
+    "djangorestframework>=3.10.3",
+    "pycryptodome>=3.9.1",
+]
+VERSION = get_version(_pkg)
 
 setup(
     name="django-rest-vault",
     version=VERSION,
     install_requires=requirements,
-    packages=["rest_framework_vault"],
+    packages=[_pkg],
     include_package_data=True,
     license="MIT License",
     description="Api data decryption and encryption support for Django REST Framework",
