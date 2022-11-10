@@ -11,7 +11,7 @@ help:
 	@echo "  publish                              push dist to pypi"
 	@echo ""
 
-build:
+build: clean
 	python -m build
 
 test_publish:
