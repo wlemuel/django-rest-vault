@@ -61,8 +61,7 @@ def encrypt(data: bytes, key: bytes = VAULT_KEY) -> bytes:
 
     cipher = Salsa20.new(key=key)
     encrypted_data = cipher.nonce + cipher.encrypt(data)
-    # return b64encode(encrypted_data)
-    return encrypted_data
+    return b64encode(encrypted_data)
 
 
 def decrypt(data: AnyStr, key: bytes = VAULT_KEY) -> bytes:

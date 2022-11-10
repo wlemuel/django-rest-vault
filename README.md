@@ -60,7 +60,7 @@ REST_VAULT = {
 curl -u admin:123456 'http://localhost:8000/users/'
 ```
 ```
-{"count":1,"next":null,"previous":null,"results":[{"url":"http://localhost:8000/users/1/?format=json","username":"admin","email":"admin@example.com","groups":[]}]}
+{"count":1,"next":null,"previous":null,"results":[{"url":"http://localhost:8000/users/1/","username":"admin","email":"admin@example.com","groups":[]}]}
 ```
 
 ### Get Users List (vault)
