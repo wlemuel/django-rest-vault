@@ -15,7 +15,7 @@ build:
 	python -m build
 
 test_publish:
-	python -m twine upload --repository testpypi --config-file .testpypirc dist/*
+	python -m twine upload --repository testpypi dist/*
 
 publish:
 	python -m twine upload dist/*
