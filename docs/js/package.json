@@ -1,0 +1,16 @@
+{
+  "name": "js-vault",
+  "version": "1.0.0",
+  "description": "vault for js",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Steve Lemuel",
+  "license": "MIT",
+  "dependencies": {
+    "js-base64": "^3.7.2",
+    "node-salsa20": "^0.2.2",
+    "random-bytes": "^1.0.0"
+  }
+}
