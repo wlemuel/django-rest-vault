@@ -44,9 +44,10 @@ Also add settings for `VAULT` to your project `settings.py`
 
 ```
 VAULT = {
-  'SECRET_KEY': b'.R%@8Xx*q->Gr1dL"-*xm5m,?2Zwcv-y',
-  'HTTP_CONTENT_TYPE': 'application/vault-v1',
-  'HTTP_ACCEPT': 'application/vault-v1',
+  'SECRET_KEY': b'*Thirty-two byte (256 bits) key*',
+  'HTTP_CONTENT_TYPE': 'application/vault',
+  'HTTP_ACCEPT': 'application/vault',
   'HTTP_FORMAT': 'vault',
+  'USE_TOKEN_AS_KEY': True,
 }
 ```
