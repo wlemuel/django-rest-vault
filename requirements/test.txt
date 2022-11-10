@@ -1,0 +1,9 @@
+# requirements for running the tests via pytest
+
+-r base.txt
+
+pytest>=4.0
+pytest-pythonpath>=0.7.1
+pytest-cov>=2.6.0
+pytest-xdist>=1.25.0
+pytest-django>=3.4.4

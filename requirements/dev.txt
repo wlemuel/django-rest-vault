@@ -1,0 +1,4 @@
+# requirements for local development to be installed via pip install -U -r requirements/dev.txt
+-r base.txt
+
+black>=22.10.0
