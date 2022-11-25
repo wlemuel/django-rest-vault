@@ -71,3 +71,7 @@ curl -u admin:123456 'http://localhost:8000/users/?format=vault
 ```
 6ARyPVxylOavaXFslb/Ab/AiYWsoFqCIu8pJ9bhnGI9zozmRkdWOySt4bI7CY0detuA9RkWhnHMS4/gLIu907E0Z8A0vHP56z493Zkld+UYSS94nk19LDr5TfkOEAQ0+A4C1AgbxlgSWk2XpxpDVZc4Nwm9rXOrP1xpIWXwAUREG520mdPwiR8AYPUpRVExsH7hSKXiasEVczAxPsXVKaamv/WC3CxgMldrIRA==
 ```
+
+## Implementations Of Other Programming Languages
+
+- [JavaScript](https://github.com/wlemuel/django-rest-vault/tree/main/docs/js)
